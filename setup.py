@@ -13,11 +13,11 @@ class PostInstallCommand(install):
 
 setup(
     name="pickle5-wheels-helper",
-    version="0.0.3",
+    version="0.0.4",
     author="Siyuan Zhuang",
     author_email="suquark@gmail.com",
     description="Helper package for installing pickle5 wheels",
-    url="https://github.com/suquark/pickle5-wheels-indices",
+    url="https://github.com/suquark/pickle5-wheels-helper",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",
