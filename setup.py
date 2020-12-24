@@ -9,11 +9,15 @@ class PostInstallCommand(install):
     def run(self):
         install.run(self)
         try_install_pickle5()
+        try:
+            import pickle5
+        except Exception as e:
+            raise Exception("pickle5 setup failed!") from e
 
 
 setup(
     name="pickle5-wheels-helper",
-    version="0.0.4",
+    version="0.0.5",
     author="Siyuan Zhuang",
     author_email="suquark@gmail.com",
     description="Helper package for installing pickle5 wheels",
